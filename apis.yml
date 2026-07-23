@@ -1,8 +1,26 @@
 aid: arrakis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arrakis.png
 name: Arrakis
-description: 'Arrakis is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Arrakis Therapeutics is a biopharmaceutical company pioneering
+  RNA-targeted small molecules (rSMs) as a new class of genetic medicines. Its rSM
+  platform enables orally available small molecules to bind RNA and modulate previously
+  undruggable biological pathways, with an industrialized discovery toolkit spanning
+  multiple modalities. The lead proprietary program targets Type 1 Myotonic Dystrophy
+  (DM1) at the root cause of the disease, alongside a pipeline of proprietary and
+  partnered programs. A GV (Google Ventures) portfolio company in the life-sciences
+  sector, Arrakis was added to the API Evangelist network as a company profile; it
+  publishes a corporate and scientific website but no public developer API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/arrakis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Life Sciences
+- Biotechnology
+- Pharmaceuticals
+- RNA
+- Drug Discovery
+- Genetic Medicine
+- Therapeutics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/arrakis-domain-security.yml
 - type: Website
-  url: http://arrakistx.com
+  url: https://arrakistx.com
+- type: About
+  url: https://arrakistx.com/about/
+- type: Blog
+  url: https://arrakistx.com/news/
+- type: Support
+  url: https://arrakistx.com/contact/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
